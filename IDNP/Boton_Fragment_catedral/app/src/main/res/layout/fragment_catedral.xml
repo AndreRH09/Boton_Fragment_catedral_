@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatedralFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnCatedral"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/rounded_button_shape"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:paddingStart="160dp"
+            android:text="La Catedral de Arequipa, también conocida como la Catedral de AQP, es un majestuoso edificio ubicado en la Plaza de Armas de Arequipa, Perú. Construida en el siglo XVII, es un notable ejemplo de la arquitectura neoclásica con influencias barrocas. Su fachada de sillar blanco, material característico de la región, destaca por sus columnas y adornos elaborados. La catedral ha experimentado varias restauraciones a lo largo de los años, especialmente tras los sismos que han afectado la ciudad. Este emblemático monumento no solo es un centro religioso, sino también un símbolo cultural y turístico de Arequipa."
+            android:textColor="#FFFFFF"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="start|top"
+            android:background="@drawable/circular_shape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/catedral"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCatedral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnCatedral"
+            app:layout_constraintTop_toTopOf="@+id/btnCatedral" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
